@@ -52,7 +52,7 @@ export const LoadMoreButton = styled.button`
 `;
 export const SearchFormInput = styled.input`
   display: inline;
-    height: 38px;
+  height: 38px;
   font: inherit;
   font-size: 20px;
   border: none;

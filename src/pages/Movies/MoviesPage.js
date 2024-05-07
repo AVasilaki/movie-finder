@@ -3,7 +3,7 @@ import { MoviesList } from 'components/moviesList/moviesList';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchApi } from 'takeApi';
-import { LoadMoreButton, Page } from './Movie,styled';
+import { LoadMoreButton, Page } from './Movie.styled';
 
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
