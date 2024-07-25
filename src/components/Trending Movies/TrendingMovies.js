@@ -6,6 +6,7 @@ import { Audio } from 'react-loader-spinner';
 const StyledLink = styled(NavLink)`
   color: blue;
   margin: 10px;
+  font-size: 24px;
   &.hover {
     color: red;
   }
