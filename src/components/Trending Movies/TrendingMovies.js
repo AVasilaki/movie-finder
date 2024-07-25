@@ -5,9 +5,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Audio } from 'react-loader-spinner';
 const StyledLink = styled(NavLink)`
   color: blue;
-
-  &.active {
-    color: orange;
+  margin: 10px;
+  &.hover {
+    color: red;
   }
 `;
 
