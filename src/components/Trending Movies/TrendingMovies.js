@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Audio } from 'react-loader-spinner';
 const StyledLink = styled(NavLink)`
-  color: #f5e4e5;
   margin: 10px;
   font-size: 24px;
-  &.hover {
+  color: #f5e4e5;
+  &.active {
     color: red;
   }
 `;
@@ -40,13 +40,11 @@ export default function Home() {
       <ul>
         {movies.map(movie => {
           return (
-            <StyledLink
-              to={`/movies/${movie.id}`}
-              key={movie.id}
-              state={{ from: location }}
-            >
-              <li>{movie.name || movie.title}</li>
-            </StyledLink>
+            <li key={movie.id}>
+              <StyledLink to={`/movies/${movie.id}`} state={{ from: location }}>
+                {movie.name || movie.title}
+              </StyledLink>
+            </li>
           );
         })}
       </ul>
