@@ -1,16 +1,8 @@
 import { useEffect, useState } from 'react';
 import { fetchApi } from 'takeApi';
-import styled from 'styled-components';
-import { NavLink, useLocation } from 'react-router-dom';
+import { StyledLink, StyledLi } from './TrendingMovies.styled';
+import { useLocation } from 'react-router-dom';
 import { Audio } from 'react-loader-spinner';
-const StyledLink = styled(NavLink)`
-  margin: 10px;
-  font-size: 24px;
-  color: #f5e4e5;
-  &.active {
-    color: red;
-  }
-`;
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
@@ -40,11 +32,11 @@ export default function Home() {
       <ul>
         {movies.map(movie => {
           return (
-            <li key={movie.id}>
+            <StyledLi key={movie.id}>
               <StyledLink to={`/movies/${movie.id}`} state={{ from: location }}>
                 {movie.name || movie.title}
               </StyledLink>
-            </li>
+            </StyledLi>
           );
         })}
       </ul>
