@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const StyledLink = styled(NavLink)`
-  margin: 10px;
   font-size: 24px;
+  text-decoration: none;
   color: #f5e4e5;
-  &.active {
+  &.visited {
     color: red;
   }
 `;
