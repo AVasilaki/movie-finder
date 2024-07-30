@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import background from '../../images/charli-movie.png';
 
 export const Container = styled.div`
-  max-width: 960px;
+  max-width: 1300px;
   margin: 20px;
   padding: 0 16px;
   background-image: linear-gradient(
@@ -12,7 +12,8 @@ export const Container = styled.div`
     ),
     url(${background});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1300px 1200px;
+  background-position: left bottom;
 `;
 
 export const Header = styled.header`
