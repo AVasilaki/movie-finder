@@ -1,9 +1,9 @@
 import TrendingMovies from 'components/Trending Movies/TrendingMovies';
-
+import { StyledTitle } from './HomePage.styled';
 const Home = () => {
   return (
     <>
-      <h1>Trending today</h1>
+      <StyledTitle>Trending today</StyledTitle>
       <TrendingMovies />
     </>
   );

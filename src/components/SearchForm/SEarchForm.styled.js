@@ -24,8 +24,8 @@ export const SearchFormButton = styled.button`
   height: 38px;
   border: 0;
   font-size: 15px;
-  opacity: 0.6;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.7;
+  transition: opacity 20ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
 `;
