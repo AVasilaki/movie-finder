@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink, useLocation } from 'react-router-dom';
 const StyledLink = styled(NavLink)`
-  color: blue;
+  color: brown;
 
   &.active {
     color: orange;
